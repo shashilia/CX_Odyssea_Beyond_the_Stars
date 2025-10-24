@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F34CD59E-C645-49E0-9146-22AAEF95A577}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F34CD59E-C645-49E0-9146-22AAEF95A577}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_MX" ID="{F52A2DFE-A4A0-4279-952D-C5C6CA04594E}">
+					<ChildrenList>
+						<Action Name="" ID="{1936CEDA-2CF7-4F51-A52E-B544DC534908}" ShortID="538497368">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mx_game_loop" ID="{2E1DDD99-D487-4B2F-B089-69296D4A94B7}" WorkUnitID="{947E73F9-E43C-4C6B-92E7-78B258880663}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MX" ID="{AD3C67EE-1CC1-4C87-AC87-7444F1BD31FE}">
+					<ChildrenList>
+						<Action Name="" ID="{8765CD5F-A0EE-4771-8B28-867056D234C9}" ShortID="435556288">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mx_game_loop" ID="{2E1DDD99-D487-4B2F-B089-69296D4A94B7}" WorkUnitID="{947E73F9-E43C-4C6B-92E7-78B258880663}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Countdown" ID="{09E1026C-EED5-4377-8F9B-74CC4BC07694}">
+					<ChildrenList>
+						<Action Name="" ID="{984DF7A8-ACC2-4880-8099-B6EF6368FB53}" ShortID="622506891">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_Countdown3" ID="{780F23C3-6027-4BEF-9481-0EC386CCA811}" WorkUnitID="{A8F0FD96-4F2F-40AC-90A5-5783D78B8A21}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Cast" ID="{9E9CF3B7-8D59-41FB-99CD-83E240E7D948}">
+					<ChildrenList>
+						<Action Name="" ID="{31BF9248-9B6D-4461-B1B5-C01446E40765}" ShortID="1010845674">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_castHook" ID="{D750A105-0D4E-4734-8022-87638296D1DB}" WorkUnitID="{A8F0FD96-4F2F-40AC-90A5-5783D78B8A21}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Catch" ID="{43422514-E8FF-44F8-98B2-9E6B63B79726}">
+					<ChildrenList>
+						<Action Name="" ID="{C1783DEC-0636-44E2-BB0D-FE38CA7DC0B7}" ShortID="896611749">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FishCaught" ID="{F13BC448-B1AD-4E9D-93E3-9056D3F7BF8A}" WorkUnitID="{A8F0FD96-4F2F-40AC-90A5-5783D78B8A21}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PauseFilter_MX" ID="{48603C19-0609-462D-9DB6-1519496CEAB0}">
+					<ChildrenList>
+						<Action Name="" ID="{A00F2974-5544-4045-85CA-F16412CB9ED6}" ShortID="257755105">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="26"/>
+								<Property Name="FadeInCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Lowpass" Type="int16" Value="60"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mx_game_loop" ID="{2E1DDD99-D487-4B2F-B089-69296D4A94B7}" WorkUnitID="{947E73F9-E43C-4C6B-92E7-78B258880663}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ResetPauseFilter_MX" ID="{3795C71E-498C-4273-819E-B1B0C9F74334}">
+					<ChildrenList>
+						<Action Name="" ID="{F9E073BE-65FE-4551-ADBE-462AD950D2B3}" ShortID="514805407">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="27"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mx_game_loop" ID="{2E1DDD99-D487-4B2F-B089-69296D4A94B7}" WorkUnitID="{947E73F9-E43C-4C6B-92E7-78B258880663}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

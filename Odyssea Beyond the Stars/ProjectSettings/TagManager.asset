@@ -2,8 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - CI
+  - 'Catchable '
+  - ScoreText
+  - TargetText
+  - TimeUpText
+  - WinText
+  - PauseText
   layers:
   - Default
   - TransparentFX
@@ -41,3 +48,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3360369951
+    locked: 0
+  - name: Planet
+    uniqueID: 3743256217
+    locked: 0
+  - name: Water
+    uniqueID: 1851710203
+    locked: 0
+  - name: Catchable
+    uniqueID: 2518269949
+    locked: 0
+  - name: Player
+    uniqueID: 1703130673
+    locked: 0
+  - name: Hook
+    uniqueID: 894083711
+    locked: 0
+  - name: UI
+    uniqueID: 930679453
+    locked: 0
+  m_RenderingLayers:
+  - Default

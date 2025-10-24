@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F947C554-799B-45B8-8F24-F8AC949BE300}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{F947C554-799B-45B8-8F24-F8AC949BE300}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="ScoreRatio" ID="{7E646EBE-72AF-411E-8C08-206FBB53649C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

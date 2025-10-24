@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A8F0FD96-4F2F-40AC-90A5-5783D78B8A21}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{A8F0FD96-4F2F-40AC-90A5-5783D78B8A21}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="sfx_UI_itemrespawn" ID="{5A6C2A95-13AF-408F-AAA9-52B23F586D1C}" ShortID="452493049">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CCFADB7F-7DFC-4827-B9E4-6146C01C276E}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_UI_itemrespawn" ID="{F368A52D-2F47-4947-A028-2A090A18A48A}">
+							<Language>SFX</Language>
+							<AudioFile>sfx_UI_itemrespawn.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="757541208"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_UI_itemrespawn" ID="{F368A52D-2F47-4947-A028-2A090A18A48A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="FishCaught" ID="{F13BC448-B1AD-4E9D-93E3-9056D3F7BF8A}" ShortID="446928598">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{47310292-9360-42D5-958C-5A4EEAD15E53}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="8"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_fishCaught_01" ID="{947C18AC-D820-4715-8273-EC9016E2DB63}" ShortID="58015786">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3AF94A07-183B-4106-AF21-A8873248AC47}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-500"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fishCaught" ID="{D3D09621-8350-4F20-8A70-8233448A2934}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0320969587770002"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.14602352421491"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_fishCaught.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="639383174"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fishCaught" ID="{D3D09621-8350-4F20-8A70-8233448A2934}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fishCaught_02" ID="{9C0D1646-FFB2-43B0-925A-D15D9DA0D3E8}" ShortID="735699568">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-500</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0FF24240-98F5-4902-B3BA-33070F0E9C80}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-500"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ESM_GB_fx_foley_one_shot_watrdrip_water_drop_02_drip_liquid" ID="{51621202-3A6A-493D-8D33-9889ACAF8486}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.061403941638364"/>
+										<Property Name="LoopEnd" Type="Real64" Value="0.186053935534848"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.211229551606577"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ESM_GB_fx_foley_one_shot_watrdrip_water_drop_02_drip_liquid.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="704155933"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ESM_GB_fx_foley_one_shot_watrdrip_water_drop_02_drip_liquid" ID="{51621202-3A6A-493D-8D33-9889ACAF8486}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fishCaught_03" ID="{EDCB62B2-59F8-4A6D-8E31-C4CF533BE377}" ShortID="258026584">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-500</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0AA0065F-3076-4A7B-9973-41FAC5AF5F99}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ESM_GB_fx_foley_one_shot_watrdrip_water_drop_02_drip_liquid" ID="{F3BDAC36-97FD-40B1-9963-1489B9E41DE9}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.061403941638364"/>
+										<Property Name="LoopEnd" Type="Real64" Value="0.186053935534848"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.211229551606577"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ESM_GB_fx_foley_one_shot_watrdrip_water_drop_02_drip_liquid.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="704155933"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ESM_GB_fx_foley_one_shot_watrdrip_water_drop_02_drip_liquid" ID="{F3BDAC36-97FD-40B1-9963-1489B9E41DE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fishCaught_04" ID="{DFD227B1-1F3E-4466-B6A0-7E389FDF3ED9}" ShortID="215671461">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BF547D66-316F-42A2-AD83-77118FFFE797}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fishCaught" ID="{4FA48546-9B24-46B5-83E5-7B7A326297DF}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0320969587770002"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.14602352421491"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_fishCaught.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="639383174"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fishCaught" ID="{4FA48546-9B24-46B5-83E5-7B7A326297DF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="sfx_Countdown3" ID="{780F23C3-6027-4BEF-9481-0EC386CCA811}" ShortID="805181056">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CBB5D1C3-8A5A-4234-8AF8-6AD50CC113DB}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_Countdown3" ID="{94540893-C327-4E7F-94AB-F52DB9F25DFC}">
+							<Language>SFX</Language>
+							<AudioFile>sfx_Countdown3.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="967493160"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_Countdown3" ID="{94540893-C327-4E7F-94AB-F52DB9F25DFC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="sfx_castHook" ID="{D750A105-0D4E-4734-8022-87638296D1DB}" ShortID="191529917">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{74633FC4-B9EF-4A66-96F5-7FE9FE729FA6}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60644BF3-A015-4A46-B59C-8ED27FFD5338}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2D4D0216-0CA5-463F-A750-17850EA42BC0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sfx_castHook" ID="{72A98068-6EDB-4F05-A8C8-4F7898C916DC}">
+							<Language>SFX</Language>
+							<AudioFile>sfx_castHook.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="725097166"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sfx_castHook" ID="{72A98068-6EDB-4F05-A8C8-4F7898C916DC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
