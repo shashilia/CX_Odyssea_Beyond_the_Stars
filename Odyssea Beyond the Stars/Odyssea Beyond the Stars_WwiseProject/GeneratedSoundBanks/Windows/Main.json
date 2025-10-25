@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{0C6EED89-343F-434B-8E43-F2E8C492FB0E}",
     "Language": "SFX",
-    "Hash": "{F20A10AB-9BAE-6A42-F389-812321E8997A}",
+    "Hash": "{7BF2EFD1-94BC-EB61-56D0-2931B9D80E48}",
     "ObjectPath": "\\SoundBanks\\SoundBank\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_fishCaught.wav",
-      "CachePath": "CC/{CC581217-6829-666F-C581-41461C73EB52}.wem"
+      "CachePath": "EA/{EA07EBE2-6DCF-55AF-B2EE-40F4EE65C804}.wem"
      },
      {
       "Id": "648570329",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ESM_GB_fx_foley_one_shot_watrdrip_water_drop_02_drip_liquid.wav",
-      "CachePath": "E6/{E67114FA-0897-3499-C435-2F96AF06D122}.wem"
+      "CachePath": "60/{60517434-4234-0915-5883-4524E00C5FDF}.wem"
      },
      {
       "Id": "725097166",
@@ -238,6 +238,6 @@
     ]
    }
   ],
-  "FileHash": "{25A5A8F0-89D2-FAA2-ECBF-67B7BCB12951}"
+  "FileHash": "{F270E11C-21CE-1D4B-A23E-86F1C476566D}"
  }
 }

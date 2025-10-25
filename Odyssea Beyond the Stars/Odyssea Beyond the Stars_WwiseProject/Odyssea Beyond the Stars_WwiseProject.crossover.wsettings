@@ -32,7 +32,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="Fz3TqzdDg0aWSgW08xQ/2mS53AeBlbBHtadt7xTshe4="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="Fz3TqzdDg0aWSgW08xQ/2mS53AeBlbBHtadt7xTshe52L1SQ/weAT4qj3eBVpB9x"/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="Interactive Music\x64_{83BD4031-08C7-48C6-B8F2-9AA1DF407A93} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP68q4ExV6jBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{E831943A-1FAC-456B-8533-4232EE597238} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP68q4ExV6jBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -58,6 +58,10 @@
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{A45AAC64-78D1-46A7-88FA-F242B38651B4}" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value="ewBFADgAMwAxADkANAAzAEEALQAxAEYAQQBDAC0ANAA1ADYAQgAtADgANQAzADMALQA0ADIAMwAyAEUARQA1ADkANwAyADMAOAB9AAAAAQF7AEYANQAyAEEAMgBEAEYARQAtAEEANABBADAALQA0ADIANwA5AC0AOQA1ADIARAAtAEMANQBDADYAQwBBADAANAA1ADkANABFAH0AAAABAXsAOQA0ADcAQwAxADgAQQBDAC0ARAA4ADIAMAAtADQANwAxADUALQA4ADIANwAzAC0ARQBDADkAMAAxADYARQAyAEQAQgA2ADMAfQAAAAEBewAwAEMANgBFAEUARAA4ADkALQAzADQAMwBGAC0ANAAzADQAQgAtADgARQA0ADMALQBGADIARQA4AEMANAA5ADIARgBCADAARQB9AAAAAQF7AEEARAA1AEEARAA4AEYAMgAtADIANAA0ADcALQA0AEYAMABGAC0AOAA3ADkAQQAtAEEAMQBEAEMAMQAwAEUAMgAzAEQAMQA2AH0AAAAAAXsARABDADUAQgA0AEEARABGAC0ANgAxAEUAQgAtADQANwA3AEMALQA4ADcAQwBCAC0ANQA0AEQAMwBGAEYANgAwADEAQwA2AEMAfQAAAAEBewBGADgAOABEAEEAMgBEAEMALQAyADgANQA4AC0ANABEADkANQAtADkANQA1ADIALQAyADMAOQBCADkAMABGADUANgAwADQARgB9AAAAAQF7AEEAQQA3ADUAMgAzAEMANwAtAEEAQgBEADEALQA0ADQAQwBDAC0AOQBDADkANwAtADYAMAAwADAARABEADUAOABBADYAMwBFAH0AAAABAXsAOQAxAEUANQBBADQAMQA1AC0AQwBCADUARgAtADQAQwBGAEQALQBBAEYANAAwAC0AQwBBADcAMgA1ADcAMABEADAAMQBDAEMAfQAAAAEB"/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{FB6925F8-3EDD-42F1-B446-654A30D756CF}" Type="string" Value=""/>
+				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
+				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
+				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
+				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Audio_FocusedObject" Type="string" Value="{DC5B4ADF-61EB-477C-87CB-54D3FF601C6C}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentSearch" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentTab" Type="int32" Value="2"/>
