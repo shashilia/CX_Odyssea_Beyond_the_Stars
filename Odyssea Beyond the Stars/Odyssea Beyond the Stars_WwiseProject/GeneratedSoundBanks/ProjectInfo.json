@@ -1,0 +1,43 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "Odyssea Beyond the Stars_WwiseProject",
+   "GUID": "{A2F1D43B-DE4D-436C-B30D-452E36BD9C91}",
+   "Generator": "2024.1.9.8920"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{ABD33D17-4337-4683-964A-05B4F3143FDA}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Web",
+    "GUID": "{07DCB964-9581-47B0-B5A7-6DEF14EC85EE}",
+    "BasePlatform": "Web",
+    "BasePlatformGUID": "{639AD233-23F2-4C0F-9127-79F44C15E1DA}",
+    "Path": "Web"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{90542F76-07FF-4F80-8AA3-DDE055A41F71}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{BE062DBC-79EC-4B7C-873F-7D8E98F97F96}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{88EDE1D3-A3AE-F3DB-45E5-7AB800D97924}"
+ }
+}

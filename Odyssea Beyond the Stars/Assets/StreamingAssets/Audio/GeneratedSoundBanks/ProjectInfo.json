@@ -12,14 +12,14 @@
     "GUID": "{ABD33D17-4337-4683-964A-05B4F3143FDA}",
     "BasePlatform": "Mac",
     "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
-    "Path": "../../../../Odyssea Beyond the Stars_WwiseProject/GeneratedSoundBanks/Mac"
+    "Path": "Mac"
    },
    {
     "Name": "Web",
     "GUID": "{07DCB964-9581-47B0-B5A7-6DEF14EC85EE}",
     "BasePlatform": "Web",
     "BasePlatformGUID": "{639AD233-23F2-4C0F-9127-79F44C15E1DA}",
-    "Path": "../../../../Odyssea Beyond the Stars_WwiseProject/GeneratedSoundBanks/Web"
+    "Path": "Web"
    },
    {
     "Name": "Windows",
@@ -38,6 +38,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{0E2FEB51-BD86-E3DA-2327-D6708CCE3762}"
+  "FileHash": "{E169ED7F-1EC7-2E3F-FCA4-E592B2F68929}"
  }
 }
