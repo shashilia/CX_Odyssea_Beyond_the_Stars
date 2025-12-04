@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 557fd8a18a3f14450b2929a4f270b33b
   - enabled: 1
+    path: Assets/Scenes/SpeedRun.unity
+    guid: 38fc0a086376d4c9f918ea3916d97c30
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

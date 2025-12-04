@@ -49,6 +49,10 @@ public class GameBehavior : MonoBehaviour
     // === WWise Low Pass Filter Event ===
     private bool _musicFiltered = false;
 
+    // === Speed Run Mode ===
+    private const string SPEED_RUN_SCENE = "SpeedRun";
+    private const string SPEED_RUN_HIGHSCORE_KEY = "SpeedRunHighScore";
+
     private void ApplyFilterOn()
     {
         if (_musicFiltered) return;
@@ -177,6 +181,13 @@ public class GameBehavior : MonoBehaviour
 
             case Utilities.GameState.Win:
                 string scene02 = SceneManager.GetActiveScene().name;
+                if (scene02 == SPEED_RUN_SCENE)
+                {
+                    if (Input.GetKeyDown(KeyCode.R))
+                        ReloadScene(scene02);
+
+                }
+
                 if (Input.GetKeyDown(KeyCode.Return))
                     LoadNextScene(scene02);
 
@@ -209,26 +220,83 @@ public class GameBehavior : MonoBehaviour
     {
         string scene = SceneManager.GetActiveScene().name;
 
-        _winScoreThreshold = scene switch
+        if (scene == SPEED_RUN_SCENE)
         {
-            "Level 1" => 200,
-            "Level 2" => 500,
-            "Level 3" => 1000,
-            _ => 200
-        };
+            // Speed Run：目标分数 = 历史最高分（第一次玩默认为 0）
+            _winScoreThreshold = PlayerPrefs.GetInt(SPEED_RUN_HIGHSCORE_KEY, 0);
+        }
+        else
+        {
+            _winScoreThreshold = scene switch
+            {
+                "Level 1" => 200,
+                "Level 2" => 500,
+                "Level 3" => 1000,
+                _ => 200
+            };
+        }
 
         if (_targetScoreUI != null)
             _targetScoreUI.text = _winScoreThreshold.ToString();
 
-        Debug.Log($"Win threshold for {scene}: {_winScoreThreshold}");
+        Debug.Log($"Win/target threshold for {scene}: {_winScoreThreshold}");
     }
+
 
     public void CheckEndCondition()
     {
-        if (Score >= _winScoreThreshold)
-            State = Utilities.GameState.Win;
+        string scene = SceneManager.GetActiveScene().name;
+
+        // Speed Run 特殊处理：不再是“过关分数”，而是“打破纪录没”
+        if (scene == SPEED_RUN_SCENE)
+        {
+            int previousRecord = PlayerPrefs.GetInt(SPEED_RUN_HIGHSCORE_KEY, 0);
+            bool beatRecord = Score > previousRecord;
+
+            if (beatRecord)
+            {
+                // 存新纪录
+                PlayerPrefs.SetInt(SPEED_RUN_HIGHSCORE_KEY, Score);
+                PlayerPrefs.Save();
+            }
+
+            // 更新当前这一局之后的 Record 显示
+            _winScoreThreshold = PlayerPrefs.GetInt(SPEED_RUN_HIGHSCORE_KEY, 0);
+            if (_targetScoreUI != null)
+                _targetScoreUI.text = _winScoreThreshold.ToString();
+
+            // 打破纪录 -> Win，不然 -> TimesUp
+            State = beatRecord ? Utilities.GameState.Win : Utilities.GameState.TimesUp;
+        }
         else
-            State = Utilities.GameState.TimesUp;
+        {
+            // 普通关卡保持原来的逻辑
+            if (Score >= _winScoreThreshold)
+                State = Utilities.GameState.Win;
+            else
+                State = Utilities.GameState.TimesUp;
+        }
+    }
+
+    public static void ResetSpeedRunHighScore()
+    {
+        // 删除 SpeedRun 的最高分记录
+        PlayerPrefs.DeleteKey(SPEED_RUN_HIGHSCORE_KEY);
+        PlayerPrefs.Save();
+
+        Debug.Log("SpeedRun high score reset.");
+
+        // 如果此时刚好在 SpeedRun 场景里，就顺便把 UI 也刷新一下
+        if (Instance != null && SceneManager.GetActiveScene().name == SPEED_RUN_SCENE)
+        {
+            Instance._winScoreThreshold = 0;
+
+            if (Instance._targetScoreUI != null)
+                Instance._targetScoreUI.text = "0";
+
+            // 音乐 RTPC 也清零
+            AudioManager.Instance?.SetScoreRatio01(0f);
+        }
     }
 
     // === Bullet Time ===
@@ -323,10 +391,11 @@ public class GameBehavior : MonoBehaviour
         {
             case "Level 1": SceneManager.LoadScene("Level 1"); break;
             case "Level 2": SceneManager.LoadScene("Level 2"); break;
+            case SPEED_RUN_SCENE: SceneManager.LoadScene(SPEED_RUN_SCENE); break;
             default:        SceneManager.LoadScene("Level 1"); break;
         }
 
-        //进入新关卡后重制
+        // 下面这几行你原来就有，保留就行
         SetWinThreshold();
         State = Utilities.GameState.Play;
         _bulletUsed = false;
@@ -338,12 +407,12 @@ public class GameBehavior : MonoBehaviour
         switch (currentScene)
         {
             case "Level 1": SceneManager.LoadScene("Level 2"); break;
-            //以后如果想要加level 3： case "Level 2": SceneManager.LoadScene("Level 3"); break;
+            // 以后如果想要加level 3： case "Level 2": SceneManager.LoadScene("Level 3"); break;
             case "Level 2": SceneManager.LoadScene("Thanks"); break;
+            case SPEED_RUN_SCENE: SceneManager.LoadScene(SPEED_RUN_SCENE); break; // Win 后再来一把
             default:        SceneManager.LoadScene("Level 1"); break;
         }
 
-        //进入新关卡后重制
         SetWinThreshold();
         State = Utilities.GameState.Play;
         _bulletUsed = false;
